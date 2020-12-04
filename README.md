@@ -1,9 +1,17 @@
 
 1. **Title:** O I Love That Book!
-2. **Description:** O I Love That Book will contain all of the books on Oprah's Book Club Book List.  When a use opens the app, they will see the cover and description of the current book club book.  They will also be able to search by title, author or genre for the other books on the list.  When searching by author or title, the user will be routed to the book detail page.  If the user searches by genre using the genre buttons, they will be taken to a list of books in that genre.  They can then click on the title and will be taken to the book detail page.  On the detail page the user will see the book cover image, the title, author and description of the book.  They will also be able to rate the book using the 1-5 star system or can write a detailed review.
+2. **Description:** 
+O I Love That Book will contain all of the books on Oprah's Book Club Book List.  When a use opens the app, they will see the cover and description of the current book club book.  They will also be able to search by title, author or genre for the other books on the list.  When searching by author or title, the user will be routed to the book detail page.  If the user searches by genre using the genre buttons, they will be taken to a list of books in that genre.  They can then click on the title and will be taken to the book detail page.  On the detail page the user will see the book cover image, the title, author and description of the book.  They will also be able to rate the book using the 1-5 star system or can write a detailed review.
 3. **Wireframes:** 
+
+Tablet View
+
 ![homepage-mobile](./images/Homepage-mobile.png)
 ![Details-page](./images/Details-page.png)
+
+Desktop View
+![DesktopHomepage](./images/DesktopHomepage.png)
+![DesktopDetailsPage](./images/DesktopDetailsPage.png)
 
 4. **Component Hierarchy:** 
 ![ComponentHierarchy](./images/ComponentHierarchy.png)
@@ -12,7 +20,7 @@
 5. **API:** EXAMPLE RESPONSE
 
 
-{
+```{
     "records": [
         {
             "id": "recYGQ3IeTXa34uI5",
@@ -26,7 +34,8 @@
                 ]
             },
             "createdTime": "2020-12-03T16:40:54.000Z"
-        },
+        },```
+
 6. **MVP:** 
 Homepage with 2 search fields that route to book details page
 Homepage with buttons to  select the book by genre
