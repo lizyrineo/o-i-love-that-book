@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  text-align: center; 
+  
 }
 
 .App-logo {
@@ -22,6 +23,20 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.App-body {
+  background-image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu6HTe5RHHcbxDGJT2wksMm0AQzRodCeA8Ew&usqp=CAU'
+}
+
+
+
+.genreSelect {
+  display: grid;
+  justify-content: center;
+  align-items: bottom;
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr;
 }
 
 .App-link {
