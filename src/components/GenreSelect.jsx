@@ -1,13 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import BookInfo from './BookInfo';
+
 
 const GenreSelect = (props) => {
   console.log(props);
   return (
-  <Link to={`/genre/${props.genre}`}>
+    <div className="genre-select-container">
+
+    <Link to={`/genre/${props.genre}`}>
     
-    <button className="genreObj">{`${props.genre}`}</button>
-   </Link>
+    <button className='genre-button'>{`${props.genre}`}</button>
+      </Link>
+      </div>
   );
 };
 

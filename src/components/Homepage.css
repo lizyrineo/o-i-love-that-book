@@ -1,3 +1,28 @@
 body {
-  background-image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu6HTe5RHHcbxDGJT2wksMm0AQzRodCeA8Ew&usqp=CAU'
+  background-image: url('https://image.freepik.com/free-photo/opened-book-bible-background_112554-164.jpg');
+  background-size: cover;
+  background-repeat: none;
 }
+
+/* header {
+  height: 50px;
+  max-width: 100%;
+  background: black;
+
+} */
+
+.genre-select-container {
+  display: inline-grid;
+  width: 400px;
+  height: 40px;
+  margin-left: 35%;
+
+  background-color: rgba(215, 122, 99, 0.611);
+
+}
+
+.genre-button {
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+

@@ -2,8 +2,9 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { baseURL, config } from "../services";
 import { useParams } from "react-router-dom";
+import Homepage from "./Homepage";
 
-const Book = (props) => {
+const CurrentBook = (props) => {
   let { id } = useParams();
   const [currentBook, setCurrentBook] = useState({});
 
@@ -14,17 +15,17 @@ const Book = (props) => {
       setCurrentBook(response.data);
     };
     getBook();
-  }, []);
+  }, [id]);
 
   return (
-    <div>
+    <div className='current-club-book'>
       <h1>{currentBook.fields.title}</h1>
           <img
-            className='book-cover'
-            src={currentBook.fields.imgURL}></img>
-          <h3 className='title'>
+            className='current-book-cover'
+            src={currentBook.fields.imgURL} alt={currentBook.fields.title}></img>
+          <h3 className='current-book-title'>
             {currentBook.fields.title}</h3>
-          <h3 className='author'>
+          <h3 className='current-book-author'>
             {currentBook.fields.author}</h3>
           <p>
             {currentBook.fields.description}
@@ -33,4 +34,4 @@ const Book = (props) => {
   );
 };
 
-export default Book;
+export default CurrentBook;

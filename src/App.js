@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Switch, Route } from "react-router-dom";
 import Homepage from "./components/Homepage";
-import Book from "./components/Book";
+import Book from "./components/CurrentBook";
 import Form from "./components/Form";
 import Nav from "./components/Nav";
 import Genre from "./components/Genre";
@@ -12,7 +12,8 @@ import Genre from "./components/Genre";
 
 function App() {
   const [books, setBooks] = useState([]);
-  const [toggleFetch, setToggleFetch] = useState(false);
+  const [toggleFetch, setToggleFetch] = useState([]);
+  
 
   useEffect(() => {
     const getBooks = async () => {
@@ -40,7 +41,7 @@ function App() {
         <Route path="/Form">
           <Form setToggleFetch={setToggleFetch}/>
         </Route>
-        <Route path="/genre/:genreName">
+        <Route path="/Genre/:genreName">
           <Genre books={books}/>
         </Route>
       </Switch>

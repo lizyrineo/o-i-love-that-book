@@ -7,9 +7,6 @@ const Form = (props) => {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    let review = {
-      review
-    };
     await axios.post(baseURL, { fields: review }, config);
     props.setToggleFetch((prev) => !prev);
   }

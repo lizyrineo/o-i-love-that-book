@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const Genre = (props) => {
   //useParams reads the ":id" from the URL 
@@ -21,8 +21,8 @@ const Genre = (props) => {
       {genreObj[genreName].map(book => {
         return (
           <div>
-          <img className="bookCover" src={book.fields.bookCover} alt={book.fields.title}/>
-          <p>{book.fields.title}</p>
+          <img className="bookCover" src={book.fields.bookCover} alt={book.fields.bookCover}/>
+          <Link to="Book">{book.fields.title}</Link>
           </div>
           // console.log(genreObj)
   
