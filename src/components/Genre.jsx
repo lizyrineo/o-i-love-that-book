@@ -21,7 +21,8 @@ const Genre = (props) => {
       {genreObj[genreName].map(book => {
         return (
           <div>
-          <img className="bookCover" src={book.fields.bookCover} alt={book.fields.bookCover}/>
+            <img className="bookCover" src={book.fields.bookCover} alt={book.fields.bookCover} />
+            <h2>{book.fields.title}</h2>
           <Link to="Book">{book.fields.title}</Link>
           </div>
           // console.log(genreObj)

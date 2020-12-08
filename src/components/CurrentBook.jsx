@@ -18,7 +18,7 @@ const CurrentBook = (props) => {
   }, [id]);
 
   return (
-    <div className='current-club-book'>
+    <div className='current-club-book-container'>
       <h1>{currentBook.fields.title}</h1>
           <img
             className='current-book-cover'

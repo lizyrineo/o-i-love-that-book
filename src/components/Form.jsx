@@ -22,7 +22,7 @@ const Form = (props) => {
             setReview(e.target.value);
           }}
         />
-        <button onClick="review()">Submit Review</button>
+        <button type="submit">Submit Review</button>
       </form>
     </div>
   );

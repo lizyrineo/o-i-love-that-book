@@ -1,4 +1,7 @@
-
+header {
+  display: flex;
+  flex-direction: column;
+}
 
 .header-o {
   font-family: 'Dancing Script', cursive;

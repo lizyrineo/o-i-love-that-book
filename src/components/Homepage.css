@@ -10,19 +10,21 @@ body {
   background: black;
 
 } */
-
-.genre-select-container {
-  display: inline-grid;
-  width: 400px;
-  height: 40px;
-  margin-left: 35%;
-
-  background-color: rgba(215, 122, 99, 0.611);
+.current-club-selection {
 
 }
 
-.genre-button {
-  margin-top: -10px;
-  margin-bottom: -10px;
+.book-cover {
+
 }
+
+.title {
+
+}
+
+.author {
+
+}
+
+
 

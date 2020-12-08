@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { baseURL, config } from "../services";
 import GenreSelect from "./GenreSelect";
 import './Homepage.css'
+import './GenreSelect.css'
 import Header from "./Header"
 
 
@@ -33,8 +34,10 @@ const Homepage = (props) => {
   console.log(genreObj);
   //return the image, title, author and description to Homepage
   return (
+    <div>
     <div className="current-club-selection">
       {currentSelection.fields && (
+        <div>
           <h1>{currentSelection.fields.title}</h1>
           <img
             className="book-cover"
@@ -43,31 +46,18 @@ const Homepage = (props) => {
           <h3 className="title">{currentSelection.fields.title}</h3>
           <h3 className="author">{currentSelection.fields.author}</h3>
           <p>{currentSelection.fields.description}</p>
+        </div>
       )}
     </div>
           
-    <div className="search-bars">
-          <h2>
-            <label htmlFor="title-search">Search by Title</label>
-            <input
-              type="text"
-              value={props.inputValue}
-              onChange={props.titleFilterOnChange}
-            />
-          </h2>
-          <h2>
-            <label htmlFor="author-search">Search by Author</label>
-            <input
-              type="text"
-              value={props.inputValue}
-              onChange={props.authorFilterOnChange}
-            />
-          </h2>
-    </div>     
-      )}
+    <div className="genre-select-container">
       {Object.keys(genreObj).map((genre, index) => {
         return <GenreSelect key={index} genre={genre} />;
-      })
+      })}
+        <button className='genre-button'>{`${props.genre}`}</button>
+        </div>
+    </div>
+  )
 };
 
 export default Homepage;

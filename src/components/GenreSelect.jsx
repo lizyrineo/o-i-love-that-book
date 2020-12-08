@@ -6,11 +6,11 @@ import BookInfo from './BookInfo';
 const GenreSelect = (props) => {
   console.log(props);
   return (
-    <div className="genre-select-container">
+    <div>
 
     <Link to={`/genre/${props.genre}`}>
     
-    <button className='genre-button'>{`${props.genre}`}</button>
+    
       </Link>
       </div>
   );
