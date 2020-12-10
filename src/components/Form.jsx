@@ -7,25 +7,21 @@ const Form = (props) => {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    await axios.post(baseURL, { fields: review }, config);
+    await axios.post(`${baseURL}/reviews`, { fields: { review, books: [props.bookId] } }, config);
     props.setToggleFetch((prev) => !prev);
   }
-
   return (
     <div>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          review="review"
           value={review}
-          omChange={(e) => {
-            setReview(e.target.value);
-          }}
-        />
-        <button type="submit">Submit Review</button>
+          onChange={(e) => setReview(e.target.value)}/>
+            
+            <button type="submit">Submit</button>
       </form>
     </div>
   );
-};
+}
 
 export default Form;

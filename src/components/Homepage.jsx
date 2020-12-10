@@ -5,7 +5,9 @@ import { baseURL, config } from "../services";
 import GenreSelect from "./GenreSelect";
 import './Homepage.css'
 import './GenreSelect.css'
-import Header from "./Header"
+import CurrentBook from "./CurrentBook";
+import Nav from "./Nav"
+import Header from "./Header";
 
 
 const Homepage = (props) => {
@@ -16,7 +18,7 @@ const Homepage = (props) => {
 
   useEffect(() => {
     let getSelection = async () => {
-      let response = await axios.get(`${baseURL}/${id}`, config);
+      let response = await axios.get(`${baseURL}/books/${id}`, config);
       setCurrentSelection(response.data.records);
       console.log(getSelection);
     };
@@ -35,28 +37,16 @@ const Homepage = (props) => {
   //return the image, title, author and description to Homepage
   return (
     <div>
-    <div className="current-club-selection">
-      {currentSelection.fields && (
-        <div>
-          <h1>{currentSelection.fields.title}</h1>
-          <img
-            className="book-cover"
-            src={currentSelection.fields.bookCover} alt={currentSelection.fields.title}
-          ></img>
-          <h3 className="title">{currentSelection.fields.title}</h3>
-          <h3 className="author">{currentSelection.fields.author}</h3>
-          <p>{currentSelection.fields.description}</p>
-        </div>
-      )}
-    </div>
+      <Nav />
+      <CurrentBook />
           
-    <div className="genre-select-container">
+    
       {Object.keys(genreObj).map((genre, index) => {
         return <GenreSelect key={index} genre={genre} />;
       })}
-        <button className='genre-button'>{`${props.genre}`}</button>
-        </div>
+       
     </div>
+  
   )
 };
 

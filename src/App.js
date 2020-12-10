@@ -10,22 +10,31 @@ import Nav from "./components/Nav";
 import Genre from "./components/Genre";
 
 
+
 function App() {
   const [books, setBooks] = useState([]);
   const [toggleFetch, setToggleFetch] = useState([]);
-  
+  const [review, setReview] = useState([]);
 
   useEffect(() => {
     const getBooks = async () => {
-      const response = await axios.get(baseURL, config);
+      const response = await axios.get(`${baseURL}/books`, config);
       setBooks(response.data.records);
       console.log(response);
     };
     
     getBooks();
-  }, []);
+  }, [toggleFetch]);
 
-
+  useEffect(() => {
+    const getReview = async () => {
+      const resp = await axios.get(`${baseURL}/reviews`, config);
+      setReview(resp.data.records);
+      console.log(resp);
+    };
+    getReview();
+  }, [toggleFetch]);
+  
   return (
     <div className="App">
       <Nav />
@@ -39,10 +48,10 @@ function App() {
         ))}
         </Route>
         <Route path="/Form">
-          <Form setToggleFetch={setToggleFetch}/>
+          <Form reviews={review} setToggleFetch={setToggleFetch}/>
         </Route>
         <Route path="/Genre/:genreName">
-          <Genre books={books}/>
+          <Genre books={books} setToggleFetch={setToggleFetch}/>
         </Route>
       </Switch>
     </div>

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { baseURL, config } from "../services";
 import { useParams } from "react-router-dom";
 import Homepage from "./Homepage";
+import "./CurrentBook.css";
 
 const CurrentBook = (props) => {
   let { id } = useParams();
@@ -11,26 +12,33 @@ const CurrentBook = (props) => {
   //api call for a single book returned
   useEffect(() => {
     let getBook = async () => {
-      let response = await axios.get(`${baseURL}/${id}`, config);
-      setCurrentBook(response.data);
+      let response = await axios.get(`${baseURL}/current/`, config);
+      setCurrentBook(response.data.records[0]);
     };
     getBook();
   }, [id]);
 
   return (
-    <div className='current-club-book-container'>
-      <h1>{currentBook.fields.title}</h1>
+    <div>
+      <div className='whole-container'>
+        {currentBook.fields && <>
+          <h1 className='current-book-title'>{currentBook.fields.title}</h1>
           <img
             className='current-book-cover'
-            src={currentBook.fields.imgURL} alt={currentBook.fields.title}></img>
-          <h3 className='current-book-title'>
-            {currentBook.fields.title}</h3>
+            src={currentBook.fields.bookCover} alt={currentBook.fields.title}></img>
           <h3 className='current-book-author'>
             {currentBook.fields.author}</h3>
-          <p>
-            {currentBook.fields.description}
-          </p>
+      <p className="description">
+        {currentBook.fields.description}
+      </p>
+            
+        </>
+        
+   
+        }
+      </div>
     </div>
+
   );
 };
 

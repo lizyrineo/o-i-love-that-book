@@ -1,20 +1,19 @@
 body {
   background-image: url('https://image.freepik.com/free-photo/opened-book-bible-background_112554-164.jpg');
+  background-repeat: no-repeat;
+  font-family: 'Shadows Into Light', cursive;
   background-size: cover;
-  background-repeat: none;
+  background-color: black;
+  width: 600px;
+  height: 1400px;
 }
 
-/* header {
-  height: 50px;
-  max-width: 100%;
-  background: black;
-
-} */
 .current-club-selection {
-
+  font-family: 'Shadows Into Light', cursive;
+  color: white;
 }
 
-.book-cover {
+/* .book-cover {
 
 }
 
@@ -24,7 +23,7 @@ body {
 
 .author {
 
-}
+} */
 
 
 

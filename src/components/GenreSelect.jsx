@@ -8,10 +8,13 @@ const GenreSelect = (props) => {
   return (
     <div>
 
-    <Link to={`/genre/${props.genre}`}>
     
-    
-      </Link>
+      <div className="genre-select-container">
+      <Link className="genre-link" to={`/genre/${props.genre}`} >
+        <button className='genre-button'>{`${props.genre}`}</button>
+        </Link>
+        </div>
+      
       </div>
   );
 };

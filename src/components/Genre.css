@@ -1,0 +1,45 @@
+
+
+.genre-info {
+  color: white;
+  background: transparent;
+  font-family: 'Shadows Into Light', cursive;
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+.genre-name-font {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 35px;
+}
+.bookCover {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+  width: 200px;
+
+}
+.book {
+  display: flex;
+
+}
+
+.book-stats:after {
+  content: '';
+  display: table;
+  clear: both;
+  font-family: 'Shadows Into Light', cursive;
+  color: white;
+  font-size: 20px;
+  float: right;
+  width: 50%;
+}
+/* button {
+  font-family: 'Architects Daughter', cursive;
+  background-color: black;
+  border: none;
+  font-size: 24px;
+  color: white;
+} */
