@@ -13,11 +13,32 @@ body {
   color: white;
 }
 
+.home {
+  display: flex;
+  /* flex-direction: column; */
+  width: 100vw;
+}
+.click-notice {
+  color: white;
+  font-size: 18px;
+
+}
+
 .whole-container {
-  height: 100px;
-  width: 800px;
-  grid-template:
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+  /* height: 100px; */
+  /* width: 800px; */
+  /* grid-template:
     [row1-start] "buttons buttons buttons" 25px [row1-end]
     [row2-start] "buttons buttons buttons" 25px [row2-end]
-    / auto 50px auto;
+    / auto 50px auto; */
+}
+
+@media screen and (max-width: 425px) {
+  .whole-container {
+    flex-direction: column;
+  }
 }

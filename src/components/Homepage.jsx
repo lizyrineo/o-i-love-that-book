@@ -3,11 +3,9 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { baseURL, config } from "../services";
 import GenreSelect from "./GenreSelect";
-import './Homepage.css'
-import './GenreSelect.css'
+import "./Homepage.css";
+import "./GenreSelect.css";
 import CurrentBook from "./CurrentBook";
-
-
 
 const Homepage = (props) => {
   let { id } = useParams();
@@ -25,7 +23,7 @@ const Homepage = (props) => {
   }, [id]);
 
   const genreObj = props.books.reduce((genreObj, book) => {
-    console.log(book)
+    console.log(book);
     if (!genreObj[book.fields.genreName[0]]) {
       genreObj[book.fields.genreName[0]] = [];
     }
@@ -35,17 +33,18 @@ const Homepage = (props) => {
   console.log(genreObj);
   //return the image, title, author and description to Homepage
   return (
-    <div>
+    <div className="home">
       <CurrentBook />
-          
-    <div className="whole-container">
-      {Object.keys(genreObj).map((genre, index) => {
-        return <GenreSelect className="buttons" key={index} genre={genre} />;
-      })}
+      <section>
+        <h1 className='click-notice'>Click on a genre to see the books</h1>
+        <div className="whole-container">
+          {Object.keys(genreObj).map((genre, index) => {
+            return <GenreSelect className="buttons" key={index} genre={genre} />;
+          })}
+        </div>
+      </section>
     </div>
-    </div>
-  
-  )
+  );
 };
 
 export default Homepage;

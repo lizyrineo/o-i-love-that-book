@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useParams, useEffect, useState } from "react";
 import axios from "axios";
 import { baseURL, config } from "../services";
 import "./BookInfo.css";
@@ -58,15 +58,17 @@ const BookInfo = (props) => {
               className="book-info-image"
               src={book.fields.bookCover}
               alt={book.fields.bookCover}
-            ></img>
-            <div>
-              <h5>{book.fields.description}</h5>
-              <Form
-                bookId={props.bookId}
-                setToggleFetch={props.setToggleFetch}
-              />
+            />
+            <div className='reviews'>
+              <div>
+                <h5>{book.fields.description}</h5>
+                <Form
+                  bookId={props.bookId}
+                  setToggleFetch={props.setToggleFetch}
+                />
+              </div>
+              {bookReviewsJSX}
             </div>
-            {bookReviewsJSX}
           </div>
         </div>
       )}

@@ -13,7 +13,7 @@ body {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  background-color: rgba(235, 129, 102, 0.90);
+  background-color: rgba(215, 141, 30, 0.6);
 }
 
 .book-info-box {
@@ -23,10 +23,10 @@ body {
 
 .book-info-box *{
   margin: 5px;
-  background-color: rgba(235, 129, 102, 0.399);
+  background-color: rgba(215, 141, 30, 0.6);
 }
 .modal {
-  background-color: rgba(235, 129, 102, 0.399);
+  background-color: rgba(215, 141, 30, 0.6);
 }
 
 .modal-content {
@@ -40,7 +40,7 @@ body {
   width: 100%;
   height: 100%;
   overflow-y: scroll;
-  background-color: rgba(235, 129, 102, 0.399);
+  background-color: rgba(215, 141, 30, 0.6);
 }
 .closeModal {
   background: transparent;

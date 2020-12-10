@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 const GenreSelect = (props) => {
   console.log(props);
   return (
-
+    <div>
+      
         <Link to={`/genre/${props.genre}`}>
           <button className="genre-button">{`${props.genre}`}</button>
         </Link>
-      
+    </div> 
+    
   );
 };
 

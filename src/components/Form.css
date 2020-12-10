@@ -8,3 +8,8 @@
   background-color: rgba(252, 170, 116, 0.35);
   
 }
+@media screen and (max-width: 425px) {
+  .review-box {
+    flex-direction: column;
+  }
+}

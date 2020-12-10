@@ -4,16 +4,18 @@
   text-align: right;
   color: rgb(24, 23, 23);
   float: right;
-  margin-left: 55%;
+  /* margin-left: 55%; */
   text-decoration: none;
 }
 
 .to-home {
+  position: absolute;
+  top: 0;
+  right: 0;
   color: rgba(244, 165, 47, 0.556);
   font-size: 17px;
   text-decoration: none;
-  margin: -10px 150px ;
-  padding: 25px;
+  padding: 15px;
 }
 .to-home:hover {
   color: black;

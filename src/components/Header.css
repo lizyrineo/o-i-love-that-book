@@ -38,3 +38,8 @@ header {
   float: right;
   margin: 35px;
 }
+@media screen and (max-width: 425px) {
+  header {
+    flex-direction: column;
+  }
+}
