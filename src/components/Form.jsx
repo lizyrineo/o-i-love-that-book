@@ -13,6 +13,7 @@ const Form = (props) => {
   }
   return (
     <div>
+      <h3>Share your thoughts here!</h3>
       <form onSubmit={handleSubmit}>
         <input
           className="review-box"

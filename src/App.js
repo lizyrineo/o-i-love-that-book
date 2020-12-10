@@ -6,9 +6,9 @@ import { Switch, Route } from "react-router-dom";
 import Homepage from "./components/Homepage";
 import Book from "./components/CurrentBook";
 import Form from "./components/Form";
-import Nav from "./components/Nav";
+import Header from "./components/Header";
 import Genre from "./components/Genre";
-
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
   
   return (
     <div className="App">
-      <Nav />
+      <Header />
       <Switch>
         <Route exact path="/">
           <Homepage books={books} setToggleFetch={setToggleFetch}/>
@@ -52,6 +52,9 @@ function App() {
         </Route>
         <Route path="/Genre/:genreName">
           <Genre books={books} setToggleFetch={setToggleFetch}/>
+        </Route>
+        <Route path="/Footer">
+          
         </Route>
       </Switch>
     </div>

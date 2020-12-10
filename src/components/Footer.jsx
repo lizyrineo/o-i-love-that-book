@@ -1,9 +1,10 @@
 import React from 'react';
+import "./Footer.css";
 
 const Footer = () => {
   return (
     <div>
-      <img className="obcLogo" src="https://lindastehno.com/img/OBC_logo.png" />
+      <img className="obc" src="https://lindastehno.com/img/OBC_logo.png"/>
       
     </div>
   );

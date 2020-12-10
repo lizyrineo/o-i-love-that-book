@@ -20,6 +20,7 @@ const CurrentBook = (props) => {
   return (
     <div>
       <div className='book-container'>
+        <h1 className='top-text'>What are Oprah Book Club Members reading today?</h1>
         {currentBook.fields && <>
           <h1 className='current-book-title'>{currentBook.fields.title}</h1>
           <img

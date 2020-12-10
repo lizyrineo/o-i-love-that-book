@@ -1,30 +1,40 @@
 header {
-  display: block;
-  /* flex-flow: row; 
-  flex-wrap: wrap;  */
+  font-family: 'ITC Bookman Light';
+  box-sizing: border-box;
   justify-content: space-around; 
   text-align: center;
-  padding: 60px;
+  padding: 10px;
   text-align: left;
-  width: 1000px;
-  height: 100px;
-  margin-left: 35%;
-  /* background-color: rgba(235, 129, 102, 0.488); */
+  width: 100vw;
+  height: fit-content;
+  
 }
 
 .header-o {
-  font-family: 'Dancing Script', cursive;
+  position: absolute;
+  height: 10px;
+  top: 0;
+  left: 0;
+  font-family: 'ITC Bookman Light';
   color: rgba(255, 119, 0, 0.803);
-  font-size: 500px;
+  text-shadow: 2px 2px  rgba(255, 119, 0, 0);
+  font-size: 270px;
+  margin: -50px 40px;
+  
 }
 
 .header-title {
-  font-family: 'Shadows Into Light', cursive;
-  color: orange;
-  font-size: 80px;
-  content: '';
-  display: table;
-  clear: both;
+  font-family: 'ITC Bookman Light';
+  text-shadow: 2px 2px black;
+  color: rgba(255, 119, 0, 0.803);
+  font-size: 100px;
+  width: fit-content;
+  margin: 0px 0 0 350px;
+  display: inline;
+}
+.obc {
+  height: 70px;
+  width: 90px;
   float: right;
-  width: 50%;
+  margin: 35px;
 }

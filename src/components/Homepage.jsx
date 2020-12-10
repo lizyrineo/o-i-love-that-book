@@ -6,8 +6,7 @@ import GenreSelect from "./GenreSelect";
 import './Homepage.css'
 import './GenreSelect.css'
 import CurrentBook from "./CurrentBook";
-import Nav from "./Nav"
-import Header from "./Header";
+
 
 
 const Homepage = (props) => {
@@ -37,8 +36,6 @@ const Homepage = (props) => {
   //return the image, title, author and description to Homepage
   return (
     <div>
-      <Header/>
-      <Nav />
       <CurrentBook />
           
     <div className="whole-container">

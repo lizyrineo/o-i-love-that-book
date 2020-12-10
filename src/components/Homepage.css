@@ -1,7 +1,7 @@
 body {
   background-image: url("https://image.freepik.com/free-photo/opened-book-bible-background_112554-164.jpg");
   background-repeat: no-repeat;
-  font-family: "Shadows Into Light", cursive;
+  font-family: 'ITC Bookman Light';
   background-size: cover;
   background-color: black;
   width: 500px;
@@ -9,7 +9,7 @@ body {
 }
 
 .current-club-selection {
-  font-family: "Shadows Into Light", cursive;
+  font-family: 'ITC Bookman Light';
   color: white;
 }
 
