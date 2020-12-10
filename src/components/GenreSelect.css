@@ -1,35 +1,16 @@
 /*GenreSelect Component*/
-.genre-select-container {
+/* .botton-container {
   font-family: 'Shadows Into Light', cursive;
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
   /* text-align: center; */
-  width: 1000px;
-  height: 30px;
+  /* width: 50px;
+  height: 10px;
   margin-left: 35%;
   background-color: rgba(235, 129, 102, 0.488);
 
-}
+} */ 
 
-.genre-button {
-  
-  justify-content: space-around;
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-  /* margin-top: 500px; */
-  margin-bottom: 500px;
-  font-family: 'Shadows Into Light', cursive;
-}
-.genre-link {
-  justify-content: space-around;
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-  /* margin-top: 500px; */
-  margin-bottom: 500px;
-  font-family: 'Shadows Into Light', cursive;
-  text-decoration: none;
-}

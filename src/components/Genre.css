@@ -36,10 +36,11 @@
   float: right;
   width: 50%;
 }
-/* button {
-  font-family: 'Architects Daughter', cursive;
-  background-color: black;
-  border: none;
-  font-size: 24px;
-  color: white;
-} */
+
+.genre-button {
+  grid-area: buttons;
+  margin: 50px;
+  height: 50px;
+  width: 200px;
+  justify-self: center;
+}

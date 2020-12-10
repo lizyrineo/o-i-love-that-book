@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import { baseURL, config } from '../services';
+import "./Form.css";
 
 const Form = (props) => {
   const [review, setReview] = useState("");
@@ -14,11 +15,13 @@ const Form = (props) => {
     <div>
       <form onSubmit={handleSubmit}>
         <input
+          className="review-box"
           type="text"
           value={review}
           onChange={(e) => setReview(e.target.value)}/>
             
-            <button type="submit">Submit</button>
+        <button type="submit">Submit</button>
+        <h2>Here is what other readers are saying...</h2>
       </form>
     </div>
   );

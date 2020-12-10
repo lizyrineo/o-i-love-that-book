@@ -37,14 +37,15 @@ const Homepage = (props) => {
   //return the image, title, author and description to Homepage
   return (
     <div>
+      <Header/>
       <Nav />
       <CurrentBook />
           
-    
+    <div className="whole-container">
       {Object.keys(genreObj).map((genre, index) => {
-        return <GenreSelect key={index} genre={genre} />;
+        return <GenreSelect className="buttons" key={index} genre={genre} />;
       })}
-       
+    </div>
     </div>
   
   )

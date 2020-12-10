@@ -2,7 +2,6 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { baseURL, config } from "../services";
 import { useParams } from "react-router-dom";
-import Homepage from "./Homepage";
 import "./CurrentBook.css";
 
 const CurrentBook = (props) => {
@@ -20,7 +19,7 @@ const CurrentBook = (props) => {
 
   return (
     <div>
-      <div className='whole-container'>
+      <div className='book-container'>
         {currentBook.fields && <>
           <h1 className='current-book-title'>{currentBook.fields.title}</h1>
           <img
