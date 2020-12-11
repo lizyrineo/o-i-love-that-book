@@ -13,20 +13,24 @@ body {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  background-color: rgba(215, 141, 30, 0.6);
+  background-color: rgb(231, 208, 167);
+  cursor: pointer;
 }
 
 .book-info-box {
   display: flex;
   flex-direction: row;
+  cursor: pointer;
 }
 
 .book-info-box *{
   margin: 5px;
-  background-color: rgba(215, 141, 30, 0.6);
+  background-color: rgb(231, 208, 167);
+  cursor: pointer;
 }
 .modal {
   background-color: rgba(215, 141, 30, 0.6);
+  cursor: pointer;
 }
 
 .modal-content {
@@ -41,6 +45,7 @@ body {
   height: 100%;
   overflow-y: scroll;
   background-color: rgba(215, 141, 30, 0.6);
+  cursor: pointer;
 }
 .closeModal {
   background: transparent;

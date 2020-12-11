@@ -5,7 +5,8 @@
   overflow-wrap: normal;
   font-size: 20px;
   font-display: top;
-  background-color: rgba(252, 170, 116, 0.35);
+  background-color: rgb(231, 208, 167);
+  cursor: pointer;
   
 }
 @media screen and (max-width: 425px) {

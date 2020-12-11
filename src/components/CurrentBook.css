@@ -9,6 +9,7 @@
   padding-right: 50px;
   padding-left: 50px;
   text-align: left;
+  cursor: pointer;
 }
 
 .description {
@@ -20,12 +21,14 @@
   margin-top: -55%;
   padding-bottom: 100px;
   text-align: left;
+  cursor: pointer;
 }
 
 .top-text {
   font-family: 'ITC Bookman Light';
   font-size: 40px;
   text-align: center;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 425px) {
