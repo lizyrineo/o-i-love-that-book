@@ -56,13 +56,13 @@ Search feature where the user can find an online book club to join
 | ------------------------- | :------: | :------------: | :-----------: | :---------: |
 | Proposal                  |    H     |      6hrs      |     6hrs      |    6hrs     |
 | Airtable setup            |    H     |      6hrs      |     9hrs      |    9hrs     |
-| Data population home      |    H     |      6hrs      |     -hrs      |    -hrs     |
-| Data population detail pg |    H     |      6hrs      |     -hrs      |    -hrs     |
-| Create Form for Review    |    H     |      2hrs      |     -hrs      |    -hrs     |
+| Data population home      |    H     |      6hrs      |     9hrs      |    9hrs     |
+| Data population detail pg |    H     |      6hrs      |     9hrs      |    9hrs     |
+| Create Form for Review    |    H     |      2hrs      |     2hrs      |    2hrs     |
 | Set up star review        |    H     |      2hrs      |     -hrs      |    -hrs     |
-| Homepage css              |    H     |      5hrs      |     -hrs      |    -hrs     |
-| Detail page css           |    H     |      5hrs      |     -hrs      |    -hrs     |
-| Total                     |    H     |      38hrs     |     -hrs      |    -hrs     |
+| Homepage css              |    H     |      5hrs      |     8hrs      |    8hrs     |
+| Detail page css           |    H     |      5hrs      |     7hrs      |    7hrs     |
+| Total                     |    H     |      38hrs     |    58hrs      |   58hrs     |
 
 10. **SWOT Analysis:** 
 Strengths: I have a solid and detailed plan how to create the app 
